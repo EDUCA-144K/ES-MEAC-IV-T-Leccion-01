@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lección 1 - La Fórmula del Éxito | Guía MEAC Interactiva</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f4f7f9; padding: 20px; position: relative; }
+    h1 { text-align: center; color: #2c3e50; }
+    .versiculo { background-color: #fff; border-left: 5px solid #34495e; padding: 15px; margin-bottom: 20px; font-style: italic; }
+    .boton, .sub-boton, .volver {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
+      font-size: 16px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-align: left;
+    }
+    .sub-boton { background-color: #27ae60; }
+    .volver { background-color: #7f8c8d; }
+    .boton:hover, .sub-boton:hover, .volver:hover { opacity: 0.9; }
+    .contenido, .sub-contenido {
+      display: none;
+      padding: 15px;
+      background-color: #ffffff;
+      border: 2px solid #2980b9;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      animation: fadeIn 0.4s ease-in-out;
+    }
+    .color-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .dot-yellow { background-color: yellow; }
+    .dot-blue { background-color: navy; }
+    .dot-green { background-color: green; }
+    .dot-red { background-color: red; }
+    @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+    ul { margin-top: 10px; }
+    .marca { position: fixed; bottom: 10px; right: 20px; color: #888; font-weight: bold; }
+    .ejemplo { color: #555; font-style: italic; margin-top: 8px; }
+    .desarrollo { margin-top: 6px; color: #333; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <h1>Lección 1: La Fórmula del Éxito - Guía Interactiva MEAC</h1>
+
+  <div class="versiculo">
+    “Solamente esfuérzate y sé muy valiente para hacer conforme a toda la ley que mi siervo Moisés te mandó. No te apartes de ella ni a la derecha ni a la izquierda, para que seas prosperado en todo lo que emprendas”<br>
+    <strong>Josué 1:7</strong>
+  </div>
+
+  <div id="inicio">
+    <button class="boton" onclick="mostrarSeccion('motiva')"><span class="color-dot dot-yellow"></span> MOTIVA – Mueve el corazón</button>
+    <button class="boton" onclick="mostrarSeccion('explora')"><span class="color-dot dot-blue"></span> EXPLORA – Escudriña la Palabra</button>
+    <button class="boton" onclick="mostrarSeccion('aplica')"><span class="color-dot dot-green"></span> APLICA – Analiza tu comunión con Dios</button>
+    <button class="boton" onclick="mostrarSeccion('crea')"><span class="color-dot dot-red"></span> CREA – Comparte y testifica</button>
+  </div>
+
+  <!-- MOTIVA -->
+  <div id="motiva" class="contenido">
+    <button class="sub-boton" onclick="mostrarDetalle('motiva1')">❓ Pregunta inicial</button>
+    <button class="sub-boton" onclick="mostrarDetalle('motiva2')">🎨 Actividad visual</button>
+    <button class="volver" onclick="volverInicio()">⬅️ Volver</button>
+  </div>
+
+  <div id="motiva1" class="sub-contenido">
+    <p><strong>Pregunta:</strong> ¿Qué significa para ti la frase “Esfuérzate y sé valiente” en tu contexto actual?</p>
+    <p class="ejemplo">Ejemplo 1: “Me impulsa a obedecer a Dios aunque tenga miedo.”</p>
+    <p class="ejemplo">Ejemplo 2: “Recuerdo que el éxito verdadero requiere perseverancia y fe.”</p>
+  </div>
+
+  <div id="motiva2" class="sub-contenido">
+    <p><strong>Actividad:</strong> Simula ser Josué recibiendo el liderazgo. Escribe lo que sientes, temores y esperanzas.</p>
+    <p class="ejemplo">Ejemplo 1: “Temor por ser comparado con Moisés.”</p>
+    <p class="ejemplo">Ejemplo 2: “Esperanza al saber que Dios estará conmigo.”</p>
+  </div>
+
+  <!-- EXPLORA -->
+  <div id="explora" class="contenido">
+    <button class="sub-boton" onclick="mostrarDetalle('explora1')">📖 Textos clave</button>
+    <button class="sub-boton" onclick="mostrarDetalle('explora2')">💬 Preguntas de estudio</button>
+    <button class="volver" onclick="volverInicio()">⬅️ Volver</button>
+  </div>
+
+  <div id="explora1" class="sub-contenido">
+    <p>
+      Josué 1 – Dios encarga a Josué la misión de entrar a la Tierra Prometida.<br>
+      <span class="desarrollo">Este capítulo muestra el paso de liderazgo, la necesidad de obedecer la ley y la promesa de éxito con la presencia de Dios.</span><br>
+
+      Hebreos 6:17-18 – La seguridad de las promesas de Dios.<br>
+      <span class="desarrollo">Dios no cambia, y sus promesas son firmes para quienes esperan con fe.</span><br>
+
+      Efesios 6:10-18 – Armadura de Dios para la lucha espiritual.<br>
+      <span class="desarrollo">La fuerza del cristiano viene de Dios. Necesitamos su protección para resistir el mal.</span><br>
+
+      Salmo 1:1-3 – Prosperidad del que medita en la ley.<br>
+      <span class="desarrollo">El éxito viene de deleitarse y meditar en la Palabra de Dios constantemente.</span><br>
+
+      Romanos 3:31 – La fe no anula la ley.
+      <span class="desarrollo">Obedecer a Dios sigue siendo parte del pacto, aún bajo la gracia.</span>
+    </p>
+  </div>
+
+  <div id="explora2" class="sub-contenido">
+    <ul>
+      <li>¿Qué relación hay entre obedecer la ley y alcanzar el éxito bíblico?</li>
+      <p class="ejemplo">Ejemplo 1: “La obediencia guía nuestros pasos a decisiones sabias.”</p>
+      <p class="ejemplo">Ejemplo 2: “Nos conecta con la voluntad de Dios.”</p>
+
+      <li>¿Qué seguridad nos dan las promesas de Dios frente a los desafíos?</li>
+      <p class="ejemplo">Ejemplo 1: “Saber que Dios no falla me ayuda a seguir confiando.”</p>
+      <p class="ejemplo">Ejemplo 2: “Me da esperanza en medio de la incertidumbre.”</p>
+    </ul>
+  </div>
+
+  <!-- APLICA -->
+  <div id="aplica" class="contenido">
+    <button class="sub-boton" onclick="mostrarDetalle('aplica1')">🧠 Reflexión personal</button>
+    <button class="sub-boton" onclick="mostrarDetalle('aplica2')">🙏 Oración comprometida</button>
+    <button class="volver" onclick="volverInicio()">⬅️ Volver</button>
+  </div>
+
+  <div id="aplica1" class="sub-contenido">
+    <p><strong>Reflexión:</strong> ¿Qué decisiones podrías tomar esta semana para aplicar la “fórmula del éxito” bíblica?</p>
+    <p class="ejemplo">Ejemplo 1: “Dedicar más tiempo al estudio de la Biblia.”</p>
+    <p class="ejemplo">Ejemplo 2: “Actuar con integridad en mi trabajo.”</p>
+  </div>
+
+  <div id="aplica2" class="sub-contenido">
+    <p><strong>Oración:</strong> “Señor, dame valor para vivir de acuerdo a tu Palabra y confiar en tus promesas todos los días.”</p>
+  </div>
+
+  <!-- CREA -->
+  <div id="crea" class="contenido">
+    <button class="sub-boton" onclick="mostrarDetalle('crea1')">📌 Desafío semanal</button>
+    <button class="sub-boton" onclick="mostrarDetalle('crea2')">📝 Dinámica grupal</button>
+    <button class="volver" onclick="volverInicio()">⬅️ Volver</button>
+  </div>
+
+  <div id="crea1" class="sub-contenido">
+    <p><strong>Desafío:</strong> Memoriza Josué 1:9 y compártelo en redes o con un amigo que lo necesite.</p>
+    <p class="ejemplo">Ejemplo 1: “Lo publiqué en mi estado de WhatsApp.”</p>
+    <p class="ejemplo">Ejemplo 2: “Se lo envié a una amiga que se sentía débil.”</p>
+  </div>
+
+  <div id="crea2" class="sub-contenido">
+    <p><strong>Actividad:</strong> En grupo, elaboren una lista de acciones que demuestren verdadera fe y valor cristiano.</p>
+    <p class="ejemplo">Ejemplo 1: “Pedir perdón a alguien que herí.”</p>
+    <p class="ejemplo">Ejemplo 2: “Compartir mi fe en mi trabajo.”</p>
+  </div>
+
+  <div class="marca">Educa144k</div>
+
+  <script>
+    function mostrarSeccion(id) {
+      ocultarTodo();
+      document.getElementById('inicio').style.display = 'none';
+      document.getElementById(id).style.display = 'block';
+    }
+    function mostrarDetalle(id) {
+      document.querySelectorAll('.sub-contenido').forEach(el => el.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+    function volverInicio() {
+      ocultarTodo();
+      document.getElementById('inicio').style.display = 'block';
+    }
+    function ocultarTodo() {
+      document.querySelectorAll('.contenido, .sub-contenido').forEach(el => el.style.display = 'none');
+    }
+  </script>
+</body>
+</html>
